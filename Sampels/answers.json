@@ -1,0 +1,126 @@
+{
+    "question0": {
+        "skip": true
+    },
+    "question1": {
+        "0.questionName": "Do you need charging through USB Type-C from both sides of laptop?",
+        "1.typeofquestion": "attribute",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "choosedAnswer": 1,
+        "skip": null
+    },
+    "question10": {
+        "0.questionName": "Choose prefered screen size",
+        "1.typeofquestion": "attribute",
+        "answers": {
+            "0": "11-13 inches",
+            "1": "14-17 inches"
+        },
+        "skip": true
+    },
+    "question11": {
+        "0.questionName": "Do you need fingerprint?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question12": {
+        "0.questionName": "Do you need Apple T2 security chip for hardware encryption?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "skip": true
+    },
+    "question2": {
+        "0.questionName": "Do you need Thunderbolt 3 (up to 40 Gbit/s)?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No, i am okay with Thunderbolt 2 (up to 20 Gbit/s)",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question3": {
+        "0.questionName": "Do you need USB Type-A without using dongles?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question4": {
+        "0.questionName": "Do you need HDMI without using dongles?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question5": {
+        "0.questionName": "Do you need Card Reader without using dongles?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question6": {
+        "0.questionName": "Choose RAM capacity",
+        "1.typeofquestion": "attribute",
+        "answers": {
+            "0": "8-16 GB",
+            "1": "32-64 GB",
+            "2": "not sure"
+        },
+        "choosedAnswer": 1,
+        "skip": null
+    },
+    "question7": {
+        "0.questionName": "Choose number of CPU threads (logical cores)",
+        "1.typeofquestion": "attribute",
+        "answers": {
+            "0": "4",
+            "1": "8",
+            "2": "12",
+            "3": "16"
+        },
+        "skip": true
+    },
+    "question8": {
+        "0.questionName": "Choose GPU type",
+        "1.typeofquestion": "attribute",
+        "answers": {
+            "0": "Integrated (cheaper)",
+            "1": "Dedicated (faster, but more expensive)",
+            "2": "not sure"
+        },
+        "skip": true
+    },
+    "question9": {
+        "0.questionName": "Are you planning to play games or render video/3D scenes on your laptop?",
+        "1.typeofquestion": "parameter",
+        "answers": {
+            "0": "No",
+            "1": "Yes",
+            "2": "not sure"
+        },
+        "skip": true
+    }
+}
