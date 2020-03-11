@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AC1E827B2417CF250072AB45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1E827A2417CF250072AB45 /* AppDelegate.m */; };
-		AC1E827E2417CF250072AB45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1E827D2417CF250072AB45 /* ViewController.m */; };
+		AC1E827E2417CF250072AB45 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC1E827D2417CF250072AB45 /* ViewController.mm */; };
 		AC1E82802417CF260072AB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1E827F2417CF260072AB45 /* Assets.xcassets */; };
 		AC1E82832417CF260072AB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1E82812417CF260072AB45 /* Main.storyboard */; };
 		AC1E82862417CF260072AB45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1E82852417CF260072AB45 /* main.m */; };
 		AC2BE9422417E03600C502F9 /* questions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2BE93E2417E03600C502F9 /* questions.cpp */; };
-		AC2BE9442417E03600C502F9 /* questions-backup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC2BE9402417E03600C502F9 /* questions-backup.cpp */; };
+		AC8617CF24194448000D861A /* ESQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC8617CE24194448000D861A /* ESQuestion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,15 +21,16 @@
 		AC1E82792417CF250072AB45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC1E827A2417CF250072AB45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AC1E827C2417CF250072AB45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AC1E827D2417CF250072AB45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC1E827D2417CF250072AB45 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		AC1E827F2417CF260072AB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC1E82822417CF260072AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC1E82842417CF260072AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC1E82852417CF260072AB45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC1E82872417CF260072AB45 /* ES1_Question_Answer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ES1_Question_Answer.entitlements; sourceTree = "<group>"; };
 		AC2BE93E2417E03600C502F9 /* questions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = questions.cpp; sourceTree = "<group>"; };
-		AC2BE9402417E03600C502F9 /* questions-backup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "questions-backup.cpp"; sourceTree = "<group>"; };
 		AC2BE9452417E07500C502F9 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		AC8617CD24194438000D861A /* ESQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESQuestion.h; sourceTree = "<group>"; };
+		AC8617CE24194448000D861A /* ESQuestion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ESQuestion.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +67,7 @@
 				AC1E82792417CF250072AB45 /* AppDelegate.h */,
 				AC1E827A2417CF250072AB45 /* AppDelegate.m */,
 				AC1E827C2417CF250072AB45 /* ViewController.h */,
-				AC1E827D2417CF250072AB45 /* ViewController.m */,
+				AC1E827D2417CF250072AB45 /* ViewController.mm */,
 				AC1E827F2417CF260072AB45 /* Assets.xcassets */,
 				AC1E82812417CF260072AB45 /* Main.storyboard */,
 				AC1E82842417CF260072AB45 /* Info.plist */,
@@ -80,8 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				AC2BE9452417E07500C502F9 /* json.hpp */,
-				AC2BE9402417E03600C502F9 /* questions-backup.cpp */,
 				AC2BE93E2417E03600C502F9 /* questions.cpp */,
+				AC8617CD24194438000D861A /* ESQuestion.h */,
+				AC8617CE24194448000D861A /* ESQuestion.cpp */,
 			);
 			path = "Cpp Logic";
 			sourceTree = "<group>";
@@ -155,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC1E827E2417CF250072AB45 /* ViewController.m in Sources */,
-				AC2BE9442417E03600C502F9 /* questions-backup.cpp in Sources */,
+				AC1E827E2417CF250072AB45 /* ViewController.mm in Sources */,
+				AC8617CF24194448000D861A /* ESQuestion.cpp in Sources */,
 				AC1E82862417CF260072AB45 /* main.m in Sources */,
 				AC1E827B2417CF250072AB45 /* AppDelegate.m in Sources */,
 				AC2BE9422417E03600C502F9 /* questions.cpp in Sources */,

@@ -7,6 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ESQuestion.h"
+
+@interface ViewController ()
+
+@property ESQuestion *questions;
+
+@end
 
 @implementation ViewController
 
@@ -14,11 +21,15 @@
 @synthesize Answer1, Answer2, Answer3, Answer4, Answer5;
 @synthesize Question;
 
+@synthesize questions;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    *questions = ESQuestion("questions.json");
 
-    OutBtn1.hidden = YES;
-    OutBtn2.hidden = YES;
+//    OutBtn1.hidden = YES;
+//    OutBtn2.hidden = YES;
     OutBtn3.hidden = YES;
     OutBtn4.hidden = YES;
     OutBtn5.hidden = YES;
@@ -29,7 +40,7 @@
     Answer4.hidden = YES;
     Answer5.hidden = YES;
     
-    Question.hidden = YES;
+//    Question.hidden = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -42,9 +53,32 @@
 
 
 - (IBAction)ActionBtn1:(NSButton *)sender {
+    ESQuestion testES;
+    
+    
+    Question.stringValue = [NSString stringWithCString: testES.testGet().c_str() encoding: [NSString defaultCStringEncoding]];
 }
 
 - (IBAction)ActionBtn2:(NSButton *)sender {
+    NSOpenPanel *panel = [[NSOpenPanel alloc] init];
+    
+    panel.title = @"Open palette file";
+    
+    panel.showsResizeIndicator    = true;
+    panel.showsHiddenFiles        = false;
+    panel.canChooseDirectories    = true;
+    panel.canCreateDirectories    = true;
+    panel.allowsMultipleSelection = false;
+    panel.allowedFileTypes        = @[@"json", @"tiff", @"tif"];
+    
+    if ([panel runModal] == NSModalResponseOK) {
+        // Pathname of the file
+        NSURL *result = panel.URL;
+        
+        NSLog(@"%@", result.path);
+    } else {
+        return;
+    }
 }
 
 - (IBAction)ActionBtn3:(NSButton *)sender {
